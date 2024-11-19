@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Products - Rouleau</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo-lg.png" width="400px" alt="Rouleau Logo">
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <!-- nav menu items -->
+            <li>
+              <a href="new.html">New</a>
+            </li>
+            <li>
+              <a href="">Clothing</a>
+            </li>
+            <li>
+              <a href="">Accessories</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="Images/cart.png" width="30px" height="30px" alt="shopping cart">
+        </a>
+        <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+    <!--single product details-->
+    <div class="small-container single-product">
+      <div class="row">
+        <!-- Product Image Section -->
+        <div class="col-2">
+          <img src="Images/image-20.2.jpg" alt="long denim jacket" width="100%" id="ProductImg">
+          <!-- small product images-->
+          <div class="small-img-row">
+            <div class="small-img-col">
+              <img src="images/denim1.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/denim2.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/denim3.jpg" width="100%" class="small-img">
+            </div>
+            <div class="small-img-col">
+              <img src="images/denim4.jpg" width="100%" class="small-img">
+            </div>
+          </div>
+        </div>
+        <!-- Product Details Section -->
+        <div class="col-2">
+          <div class="product-header">
+            <p>New Products / Coats & Jackets</p>
+            <h1>Azure Duster</h1>
+            <h4>$190.00</h4>
+          </div>
+          <div class="product-details">
+            <h3>Product Details <i class="fa fa-indent"></i>
+            </h3>
+            <p> Discover effortless style with Delray's long denim duster, designed for versatility and a touch of vintage charm. This timeless layer drapes beautifully, offering a relaxed silhouette that pairs perfectly with any outfit. Crafted from premium denim, it's the ultimate piece for layering season after season. </p>
+            <select>
+              <option>Select Size</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--suggested products-->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>You May Also Like...</h2>
+        <p>View More</p>
+      </div>
+    </div>
+    <!--row of related products-->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="Images/gal6.jpg">
+          <h4>Sven Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$139.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/gal1.jpg">
+          <h4>Akiva Hat</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$29.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/gal3.jpg">
+          <h4>Renee Jacket</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$59.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/gal2.jpg" alt="Gold collarbone length necklace">
+          <h4>Odette Set in Black</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$129.00</p>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS mobile phone.</p>
+            <div class="app-logo">
+              <img src="Images/app-store.png">
+              <img src="images/play-store.png">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logo-inv.png">
+            <p>Hand Selected Items for Every Woman. Lorem ipsum dolor.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="size-guide.html">Size Guide</a>
+              </li>
+              <li>Return Policy</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Poshmark</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Rouleau</p>
+      </div>
+    </div>
+    <!--- js for menu toggle---->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!--- js for product gallery----->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+      SmallImg[0].onclick = function() {
+        ProductImg.src = SmallImg[0].src;
+      }
+      SmallImg[1].onclick = function() {
+        ProductImg.src = SmallImg[1].src;
+      }
+      SmallImg[2].onclick = function() {
+        ProductImg.src = SmallImg[2].src;
+      }
+      SmallImg[3].onclick = function() {
+        ProductImg.src = SmallImg[3].src;
+      }
+    </script>
+  </body>
+</html>

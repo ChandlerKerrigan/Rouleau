@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment-Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="Images/logo-lg.png" width="400px" alt="Rouleau Logo">
+          </a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <!-- nav menu items -->
+            <li>
+              <a href="new.html">New</a>
+            </li>
+            <li>
+              <a href="">Clothing</a>
+            </li>
+            <li>
+              <a href="">Accessories</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="account.html">Account</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="Images/cart.png" width="30px" height="30px" alt="shopping cart">
+        </a>
+        <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+    <body>
+      <div class="payments">
+        <form action="confirmation.html" method="GET">
+          <div class="row">
+            <div class="col">
+              <h3 class="title"> Billing Address </h3>
+              <div class="inputBox">
+                <label for="name"> Full Name: </label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="inputBox">
+                <label for="email"> Email: </label>
+                <input type="text" id="email" placeholder="Enter email address">
+              </div>
+              <div class="inputBox">
+                <label for="address"> Address: </label>
+                <input type="text" id="address" placeholder="Enter address">
+              </div>
+              <div class="inputBox">
+                <label for="city"> City: </label>
+                <input type="text" id="city" placeholder="Enter city">
+              </div>
+              <div class="flex">
+                <div class="inputBox">
+                  <label for="state"> State: </label>
+                  <input type="text" id="state" placeholder="Enter state">
+                </div>
+                <div class="inputBox">
+                  <label for="zip"> Zip Code: </label>
+                  <input type="number" id="zip" placeholder="123 456">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="title">Payment</h3>
+              <div class="inputBox">
+                <label for="name"> Card Accepted: </label>
+                <img src="Images/cards.png" alt="credit/debit card image">
+              </div>
+              <div class="inputBox">
+                <label for="cardName"> Name On Card: </label>
+                <input type="text" id="cardName" placeholder="Enter card name">
+              </div>
+              <div class="inputBox">
+                <label for="cardNum"> Credit Card Number: </label>
+                <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19">
+              </div>
+              <div class="inputBox">
+                <label for="">Exp Month:</label>
+                <select name="" id="">
+                  <option value="">Choose month</option>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                  <option value="April">April</option>
+                  <option value="May">May</option>
+                  <option value="June">June</option>
+                  <option value="July">July</option>
+                  <option value="August">August</option>
+                  <option value="September">September</option>
+                  <option value="October">October</option>
+                  <option value="November">November</option>
+                  <option value="December">December</option>
+                </select>
+              </div>
+              <div class="flex">
+                <div class="inputBox">
+                  <label for="">Exp Year:</label>
+                  <select name="" id="">
+                    <option value="">Choose Year</option>
+                    <option value="2023">2024</option>
+                    <option value="2024">2025</option>
+                    <option value="2025">2026</option>
+                    <option value="2026">2027</option>
+                    <option value="2027">2028</option>
+                  </select>
+                </div>
+                <div class="inputBox">
+                  <label for="cvv">CVV</label>
+                  <input type="number" id="cvv" placeholder="1234">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Submit button -->
+          <input type="submit" value="Proceed to Checkout" class="submit_btn">
+        </form>
+      </div>
+      <script type="text/javascript" src="index.js"></script>
+    </body>
+    <!--footer-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS mobile phone.</p>
+            <div class="app-logo">
+              <img src="Images/app-store.png">
+              <img src="images/play-store.png">
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logo-inv.png">
+            <p>Hand Selected Items for Every Woman. Lorem ipsum dolor.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li>
+                <a href="size-guide.html">Size Guide</a>
+              </li>
+              <li>Return Policy</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Poshmark</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - Rouleau</p>
+      </div>
+    </div>
+    <!--- js for menu toggle---->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

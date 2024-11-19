@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="Images/logo-lg.png" width="400px" alt="Rouleau Logo">
+        </a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <!-- nav menu items -->
+          <li>
+            <a href="new.html">New</a>
+          </li>
+          <li>
+            <a href="">Clothing</a>
+          </li>
+          <li>
+            <a href="">Accessories</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="account.html">Account</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="cart.html">
+        <img src="Images/cart.png" width="30px" height="30px" alt="shopping cart">
+      </a>
+      <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+<!--confirmation-->
+  <body class="bg-gray-100">
+    <div class="confirmation-container">
+      <div class="confirmation-box">
+        <img src="Images/Thank-You.jpg" alt="Thank You" class="thank-you-icon">
+        <h1>Thank You for Your Order!</h1>
+        <p>Your order has been successfully placed. A confirmation email has been sent to <strong>youremail@example.com</strong>. </p>
+        <div class="order-summary">
+          <h2>Order Summary</h2>
+          <ul>
+            <li>Order Number: <span>#123456789</span>
+            </li>
+            <li>Order Total: <span>$618.46</span>
+            </li>
+            <li>Estimated Delivery: <span>December 5, 2024</span>
+            </li>
+          </ul>
+        </div>
+        <a href="index.html" class="continue-shopping-button">Continue Shopping</a>
+      </div>
+    </div>
+  </body>
+</html>
+<!--footer-->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iOS mobile phone.</p>
+        <div class="app-logo">
+          <img src="Images/app-store.png">
+          <img src="images/play-store.png">
+        </div>
+      </div>
+      <div class="footer-col-2">
+        <img src="Images/logo-inv.png">
+        <p>Hand Selected Items for Every Woman. Lorem ipsum dolor.</p>
+      </div>
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>
+            <a href="gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="size-guide.html">Size Guide</a>
+          </li>
+          <li>Return Policy</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Poshmark</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2020 - Rouleau</p>
+  </div>
+</div>
+<!-- js for menu toggle-->
+<script>
+  var MenuItems = document.getElementById("MenuItems");
+  MenuItems.style.maxHeight = "0px";
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight === "0px") {
+      MenuItems.style.maxHeight = "200px";
+    } else {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+</body>
+</html>

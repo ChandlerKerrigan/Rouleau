@@ -1,0 +1,240 @@
+/* Reset styles for no margin or padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* navigation bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* Style the body */
+body {
+  font-family: "Poppins", sans-serif;
+} 
+
+/* Gallery container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); 
+  gap: 0px;
+}
+
+/* Gallery item container */
+.gallery-item {
+  position: relative;
+  overflow: hidden; 
+}
+
+/* Image styling */
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+/* Default state (color image) */
+.gallery-item img {
+  filter: grayscale(0%); /* Full color */
+}
+
+/* Hover state (grayscale and zoom) */
+.gallery-item:hover img {
+  transform: scale(1.1); 
+  filter: grayscale(100%);
+}
+
+/* Overlay styling */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  font-size: 18px;
+  font-weight: bold;
+  transition: opacity 0.3s ease; 
+}
+
+/* Hover effect for overlay */
+.gallery-item:hover .overlay {
+  opacity: 1; /* Show overlay */
+}
+/* Responsive adjustments */
+@media only screen and (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); 
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(100px, 1fr)
+    ); 
+  }
+}
+
+/*FOOTER*/
+
+.footer {
+  background: #000; 
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 20px 20px;
+  clear: both; 
+  position: relative; 
+  z-index: 10;
+  margin-top: auto;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Container for footer columns */
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Row styling for footer columns */
+.footer .row {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+/* Column styles */
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  flex: 1 1 22%; 
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+/* Specific styling for footer columns */
+.footer a {
+  color: #8a8a8a; 
+  text-decoration: none; 
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex-basis: 22%;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 22%;
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none; 
+}
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    max-height: 0;
+  }
+
+  nav ul li {
+    display: block;
+    text-align: right; 
+    padding-right: 50px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
